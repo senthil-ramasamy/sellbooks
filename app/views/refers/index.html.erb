@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Refers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Registered on</th>
+      <th>Phnumber</th>
+      <th>Refid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @refers.each do |refer| %>
+      <tr>
+        <td><%= refer.name %></td>
+        <td><%= refer.email %></td>
+        <td><%= refer.registered_on %></td>
+        <td><%= refer.phnumber %></td>
+        <td><%= refer.refid %></td>
+        <td><%= link_to 'Show', refer %></td>
+        <td><%= link_to 'Edit', edit_refer_path(refer) %></td>
+        <td><%= link_to 'Destroy', refer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Refer', new_refer_path %>

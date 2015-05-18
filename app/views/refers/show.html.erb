@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @refer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @refer.email %>
+</p>
+
+<p>
+  <strong>Registered on:</strong>
+  <%= @refer.registered_on %>
+</p>
+
+<p>
+  <strong>Phnumber:</strong>
+  <%= @refer.phnumber %>
+</p>
+
+<p>
+  <strong>Refid:</strong>
+  <%= @refer.refid %>
+</p>
+<P>
+  <h3>Your Refering URL</h3>
+  <strong>http://sell.magicmarket.in/?v=<%= @refer.refid %></strong>
+</p>
+
+<%= link_to 'Edit', edit_refer_path(@refer) %> |
+<%= link_to 'Back', refers_path %>
