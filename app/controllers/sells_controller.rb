@@ -16,7 +16,6 @@ class SellsController < ApplicationController
   def new
     @sell = Sell.new
     $refer_id = params[:id]
-    puts $refer_id
     $temp = Refer.find_by refid: $refer_id
   end
 
@@ -29,8 +28,6 @@ class SellsController < ApplicationController
   def create
     @sell = Sell.new(sell_params) 
     @sell.refer = $refer_id
-    puts $temp.count
-    puts "---------------------------------------------------------------------------------------------------------"
     respond_to do |format|
       if @sell.save
 	updated_count = $temp.count+1
