@@ -1,6 +1,6 @@
 class SellsController < ApplicationController
   before_action :set_sell, only: [:show, :edit, :update, :destroy]
-
+  $temp = nil
   # GET /sells
   # GET /sells.json
   def index
@@ -15,7 +15,9 @@ class SellsController < ApplicationController
   # GET /sells/new
   def new
     @sell = Sell.new
-    @sell.refer = params[:rid]
+    $refer_id = params[:id]
+    puts $refer_id
+    $temp = Refer.find_by refid: $refer_id
   end
 
   # GET /sells/1/edit
@@ -25,13 +27,14 @@ class SellsController < ApplicationController
   # POST /sells
   # POST /sells.json
   def create
-    @sell = Sell.new(sell_params)
-
-    @temp = Refer.find_by refid: @sell.refer 
-    @temp.count = @temp.count + 1;
-  
+    @sell = Sell.new(sell_params) 
+    @sell.refer = $refer_id
+    puts $temp.count
+    puts "---------------------------------------------------------------------------------------------------------"
     respond_to do |format|
       if @sell.save
+	updated_count = $temp.count+1
+	$temp.update(count: updated_count)
         format.html { redirect_to @sell, notice: 'Sell was successfully created.' }
         format.json { render :show, status: :created, location: @sell }
       else
