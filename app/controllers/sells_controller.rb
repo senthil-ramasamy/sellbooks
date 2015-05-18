@@ -27,6 +27,9 @@ class SellsController < ApplicationController
   def create
     @sell = Sell.new(sell_params)
 
+    @temp = Refer.find_by refid: @sell.refer 
+    @temp.count = @temp.count + 1;
+  
     respond_to do |format|
       if @sell.save
         format.html { redirect_to @sell, notice: 'Sell was successfully created.' }
