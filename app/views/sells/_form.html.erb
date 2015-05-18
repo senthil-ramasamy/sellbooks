@@ -1,0 +1,18 @@
+<%= simple_form_for(@sell) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :phnumber %>
+    <div hidden>
+    <%= f.input :refer, placeholder: 'NoRef', style: 'display:none' , :input_html => { :value => params['rid'] }  %>
+    </div>
+    <%= f.input :noofbooktosell %>
+    <%= f.input :collegename %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

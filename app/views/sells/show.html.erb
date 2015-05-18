@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sell.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @sell.email %>
+</p>
+
+<p>
+  <strong>Phnumber:</strong>
+  <%= @sell.phnumber %>
+</p>
+
+<p>
+  <strong>Refer:</strong>
+  <%= @sell.refer %>
+</p>
+
+<p>
+  <strong>Noofbooktosell:</strong>
+  <%= @sell.noofbooktosell %>
+</p>
+
+<p>
+  <strong>Collegename:</strong>
+  <%= @sell.collegename %>
+</p>
+
+<%= link_to 'Edit', edit_sell_path(@sell) %> |
+<%= link_to 'Back', sells_path %>

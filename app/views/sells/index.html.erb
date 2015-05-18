@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sells</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phnumber</th>
+      <th>Refer</th>
+      <th>Noofbooktosell</th>
+      <th>Collegename</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sells.each do |sell| %>
+      <tr>
+        <td><%= sell.name %></td>
+        <td><%= sell.email %></td>
+        <td><%= sell.phnumber %></td>
+        <td><%= sell.refer %></td>
+        <td><%= sell.noofbooktosell %></td>
+        <td><%= sell.collegename %></td>
+        <td><%= link_to 'Show', sell %></td>
+        <td><%= link_to 'Edit', edit_sell_path(sell) %></td>
+        <td><%= link_to 'Destroy', sell, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sell', new_sell_path %>
