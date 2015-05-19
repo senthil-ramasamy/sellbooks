@@ -6,15 +6,15 @@
                 <div class="intro-text">
                     <span class="name">Magic Market</span>
 		    <br><br>	                   
-                    <p class="skills">We  Buy Your Old Books at your doorstep!</p>
+                    <p class="skills">Thanks for registering! :D</p>
 		    <br>
-                    <p class="skills">Scroll down to Register!</p>
+                    <p class="skills">We'll get back to you within 48hrs!</p>
                 </div>
             </div>
 	    <div class = "hidden-lg hidden-md ">
 			Magic Market<br>
-			We Buy Your Old Books from you at your doorstep!
-			Fill the details below!
+			Thanks for registering! :D
+		        We'll get back to you within 48hrs!
 	    </div>
         </div>
     </div>
@@ -24,13 +24,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Fill this up to sell your books!</h2>
+		    <h2>Buy books at unbelievable prices at</h2>
+                    <h2><button class="btn btn-danger"><a href="http://www.magicmarket.in">MagicMarket.in</a></button></h2>
                     <br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-		<%= render 'form' %>
+		
  		</div>
             </div>
         </div>
@@ -42,10 +43,14 @@
                     <h2><u>Contact Us!</u></h2>
 		     <p></p>
 		     <p>Phone:9884235001</p>
-		     <p>email:support@magicmarket.co.in	</p>
+		     <p>email:support@magicmarket.co.in</p>
 		    <p>Buy books at <a href="http://www.magicmarket.in">magicmarket.in</a></p>
                 </div>
             </div>
+            <div class="row">
+               
+            </div>
+        </div>
     </section>
 </div>
 

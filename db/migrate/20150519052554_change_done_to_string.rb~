@@ -1,0 +1,4 @@
+class ChangeDoneToString < ActiveRecord::Migration
+  def change
+  end
+end

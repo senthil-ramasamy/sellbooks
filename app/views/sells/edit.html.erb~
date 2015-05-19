@@ -6,4 +6,4 @@
 
 	<%= link_to 'Show', @sell %> |
 	<%= link_to 'Back', sells_path %>
-<% end %>
+<% end =>

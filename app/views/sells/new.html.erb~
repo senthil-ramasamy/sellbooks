@@ -1,9 +1,58 @@
-<h1>New Sell</h1>
-
-<%= render 'form' %>
- </div>
+<header id="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 hidden-sm hidden-xs">
+                <div class = "col-lg-12"></div>
+                <div class="intro-text">
+                    <span class="name">Magic Market</span>
+		    <br><br>	                   
+                    <p class="skills">We  Buy Your Old Books at your doorstep!</p>
+		    <br>
+                    <p class="skills">Scroll down to Register!</p>
+                </div>
+            </div>
+	    <div class = "hidden-lg hidden-md ">
+			Magic Market<br>
+			We Buy Your Old Books from you at your doorstep!
+			Fill the details below!
+	    </div>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper">  
+    <section class="primary" id="sell">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Fill this up to sell your books!</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+		<%= render 'form' %>
+ 		</div>
             </div>
         </div>
     </section>
-    
+    <section class="success" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Us!</h2>
+
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-lg-offset-2">
+                    <p>Phone:xxxxxxxxxx</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Other details</p>
+		    <p>Buy books at <a href="http://www.magicmarket.in">magicmarket.in</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+

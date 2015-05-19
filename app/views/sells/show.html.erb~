@@ -32,7 +32,7 @@
 
 <p>
   <strong>DONE OR NOT:</strong>
-  <%= @sell.done %>
+  <%= @sell.input %>
 </p>
 
 <%= link_to 'Edit', edit_sell_path(@sell) %> |
