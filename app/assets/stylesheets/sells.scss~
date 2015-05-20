@@ -5,7 +5,7 @@
 header {
     text-align: center;
     color: #fff;
-    background-image: url('https://lh4.googleusercontent.com/45iu2JJZ9g8jQnWZk87G_GKl5pqtrE2MjrSmStIqPWcS9Db6-98R0u2bN5PGyy3INRqOzUz-G51VFfg=w1340-h551');
+    background-image: url('sell-banner.jpg');
 
     position: fixed;
     width:100%;
